@@ -1,0 +1,33 @@
+.nutrition-programs {
+  background-color: $color-gray-50;
+  font-family: "Oswald", sans-serif;
+  color: $font-black;
+  font-size: $font-size-14;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.nutrition-programs__title {
+  font-size: $font-size-24;
+  line-height: 37px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nutrition-programs__description {
+  font-family: "Arial", sans-serif;
+  color: $color-gray-700;
+  font-weight: 400;
+  font-size: $font-size-14;
+  line-height: 18px;
+}
+
+.nutrition-programs__link {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size-16;
+  line-height: 16px;
+  color: $font-black;
+  text-transform: uppercase;
+}

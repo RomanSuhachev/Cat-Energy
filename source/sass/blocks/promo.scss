@@ -1,0 +1,19 @@
+.promo {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/promo-cat.jpg");
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: $white;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.promo__description {
+  font-size: $font-size-14;
+  line-height: 14px;
+}
+
+.promo__title {
+  font-size: $font-size-36;
+  line-height: 36px;
+}

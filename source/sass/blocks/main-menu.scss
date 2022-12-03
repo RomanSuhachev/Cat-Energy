@@ -1,0 +1,20 @@
+.main-menu {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: $font-size-20;
+  line-height: 20px;
+  color: $font-black;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-menu__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  font-family: inherit;
+  font-style: normal;
+  line-height: inherit;
+}

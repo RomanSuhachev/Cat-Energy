@@ -1,0 +1,18 @@
+.card {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size-12;
+  color: $color-gray-700;
+}
+
+.card__link {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size-16;
+  color: $color-black-20;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card__button {
+  font-size: $font-size-16;
+}

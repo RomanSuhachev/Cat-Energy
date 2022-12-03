@@ -1,0 +1,12 @@
+.field {
+  font-size: $font-size-16;
+  color: $color-gray-700;
+  text-transform: uppercase;
+}
+
+.field__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: $color-gray-700;
+  font-size: $font-size-16;
+  text-transform: uppercase;
+}

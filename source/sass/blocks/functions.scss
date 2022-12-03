@@ -1,0 +1,17 @@
+.functions__title {
+  font-size: $font-size-36;
+  line-height: 40px;
+}
+
+.functions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.functions__item {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size-14;
+  line-height: 18px;
+  color: $color-gray-700;
+}

@@ -1,0 +1,35 @@
+.example {
+  background-color: $color-gray-850;
+}
+
+.example__title {
+  font-size: $font-size-36;
+  line-height: 40px;
+}
+
+.example__description {
+  color: $color-gray-700;
+  font-size: $font-size-14;
+  line-height: 18px;
+}
+
+.example-list__title {
+  font-size: $font-size-12;
+  line-height: 12px;
+  color: $color-gray-700;
+}
+
+.example-list__description {
+  font-size: $font-size-24;
+  color: $font-black;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.example__spending {
+  font-size: $font-size-14;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+}
