@@ -1,0 +1,17 @@
+.developer {
+  text-decoration: none;
+  color: $color-gray-700;
+  font-family: "Arial", sans-serif;
+  font-size: $font-size-16;
+  line-height: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+  }
+}

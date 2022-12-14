@@ -1,5 +1,5 @@
 .nutrition-programs {
-  background-color: $color-gray-50;
+  background-color: $white;
   font-family: "Oswald", sans-serif;
   color: $font-black;
   font-size: $font-size-14;
@@ -13,6 +13,8 @@
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .nutrition-programs__description {
@@ -30,4 +32,23 @@
   line-height: 16px;
   color: $font-black;
   text-transform: uppercase;
+}
+
+.nutrition-programs__item {
+  background-color: $color-gray-50;
+}
+
+.nutrition-programs__container {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }

@@ -7,4 +7,10 @@
   font-size: $font-size-16;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    grid-row: 1/-1;
+    grid-column: 2/3;
+  }
 }

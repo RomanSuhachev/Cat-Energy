@@ -6,14 +6,28 @@
   color: $white;
   font-style: normal;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $white;
+  }
 }
 
 .promo__description {
   font-size: $font-size-14;
   line-height: 14px;
+  font-weight: 400;
 }
 
 .promo__title {
   font-size: $font-size-36;
   line-height: 36px;
+  font-weight: 400;
+  @include no-grass;
 }
+
+.promo__button {
+  width: 100%;
+  display: block;
+}
+

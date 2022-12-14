@@ -3,4 +3,66 @@
   line-height: 16px;
   text-align: center;
   font-family: "Arial", sans-serif;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.form-section__group {
+  margin: 0;
+  padding: 0;
+}
+
+.form-section__button {
+  display: block;
+  width: 100%;
+}
+
+.form-section__form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form-section__group--name {
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.form-section__group--contacts,
+.form-section__group--comment,
+.form-section__group--advanced {
+  grid-column: 1/ -1;
+}
+
+.form-section__group--contacts .field-group__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form-section__group--advanced .field-group__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-section__wrapper {
+  grid-column: 1/-1;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }

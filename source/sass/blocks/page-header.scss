@@ -1,3 +1,28 @@
 .page-header {
   background-color: #ffffff;
 }
+
+.page-header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  justify-items: center;
+  align-items: center;
+  flex-grow: 1;
+  @media (min-width: 768px) {
+    flex-grow:0;
+    gap: 15px;
+  }
+}
+
+.page-header__toggler {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

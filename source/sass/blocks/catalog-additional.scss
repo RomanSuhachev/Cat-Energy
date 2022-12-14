@@ -4,4 +4,22 @@
   line-height: 24px;
   color: $font-black;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+  }
+
+}
+
+.catalog-additional {
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+    grid-template-rows: auto auto;
+  }
 }

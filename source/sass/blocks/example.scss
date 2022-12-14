@@ -1,22 +1,40 @@
 .example {
   background-color: $color-gray-850;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient( to bottom, $white 60%, $color-gray-850 40%);
+  }
 }
 
 .example__title {
   font-size: $font-size-36;
   line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .example__description {
   color: $color-gray-700;
   font-size: $font-size-14;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.example-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example-list__title {
   font-size: $font-size-12;
   line-height: 12px;
   color: $color-gray-700;
+  margin: 0;
+  padding: 0;
 }
 
 .example-list__description {
@@ -25,6 +43,8 @@
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .example__spending {
@@ -32,4 +52,16 @@
   line-height: 20px;
   text-align: center;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.example__inner-wrapper {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 170px;
+  }
 }

@@ -10,3 +10,8 @@
   font-size: $font-size-16;
   text-transform: uppercase;
 }
+
+.field__input {
+  box-sizing: border-box;
+  width: 100%;
+}

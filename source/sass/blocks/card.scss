@@ -2,6 +2,19 @@
   font-family: "Arial", sans-serif;
   font-size: $font-size-12;
   color: $color-gray-700;
+  display: grid;
+  width: 100%;
+  grid-template-areas: "img title"
+                      "img descr"
+                      "btn btn";
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "img"
+                        "title"
+                        "descr"
+                        "btn";
+  }
 }
 
 .card__link {
@@ -11,8 +24,41 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  max-width: 50%;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+    max-width: 35%;
+    text-align: center;
+  }
 }
 
 .card__button {
   font-size: $font-size-16;
+  grid-area: btn;
+}
+
+.card__title {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  grid-area: title;
+}
+
+.card__description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  grid-area: descr;
+}
+
+.card__image {
+  grid-area: img;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
 }

@@ -4,6 +4,20 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-black-20;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-card {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr auto;
+  }
 }
 
 .property {
@@ -11,4 +25,28 @@
   font-size: $font-size-14;
   line-height: 14px;
   color: $color-gray-700;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.property__price {
+  padding: 0;
+  margin: 0;
+}
+
+.additional-card__button {
+  width: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    grid-column: 1/ -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
 }

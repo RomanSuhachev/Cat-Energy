@@ -1,12 +1,12 @@
-.contacts {
-  background-color: $color-gray-50;
-}
+
 
 .contacts__title {
   font-size: $font-size-16;
   line-height: 20px;
   color: $color-black-10;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__address {
@@ -14,4 +14,51 @@
   font-size: $font-size-14;
   line-height: 20px;
   color: $color-gray-700;
+  margin: 0;
+  padding: 0;
+
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.contacts__inner-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  padding: 0 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.contacts__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.contacts--other {
+  background-color: $color-gray-50;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.contacts {
+  max-width: 1440px;
+  margin: 0 auto;
 }

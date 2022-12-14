@@ -1,0 +1,25 @@
+.catalog-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    row-gap: 65px;
+  }
+}
+
+.catalog-list__item {
+  @media (min-width: $tablet-width) {
+    background-color: $color-gray-50;
+  }
+}
