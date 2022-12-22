@@ -8,10 +8,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: end;
     gap: 20px;
+    padding-top: 0;
   }
 }

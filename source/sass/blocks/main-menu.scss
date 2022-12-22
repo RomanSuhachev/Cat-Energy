@@ -6,20 +6,43 @@
   color: $font-black;
   margin: 0;
   list-style: none;
-  text-align: center;
   padding: 0;
+  border-top: 1px solid #e6e6e6;
+  flex-wrap: wrap;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    position: static;
+    flex-direction: row;
+    border: none;
+    justify-content: space-between;
   }
 }
+
 
 .main-menu__link {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  font-size: inherit;
+  font-size: $font-size-20;
   font-family: inherit;
   font-style: normal;
   line-height: inherit;
+  padding: 24px 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.main-menu__item {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
+
 }

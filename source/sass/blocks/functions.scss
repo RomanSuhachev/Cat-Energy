@@ -37,7 +37,38 @@
   font-size: $font-size-14;
   line-height: 18px;
   color: $color-gray-700;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  &::before {
+    content:"";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-color: #68B738;
+    background-position: 50% 50%;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/svg/leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/svg/powder.svg");
+  }
+
+  &--meal::before {
+    background-image: url("../../img/svg/eat.svg");
+  }
+
+  &--weight::before {
+    background-image: url("../../img/svg/weight.svg");
+  }
 }
+
+
+
 
 .functions__container {
   margin-bottom: 50px;

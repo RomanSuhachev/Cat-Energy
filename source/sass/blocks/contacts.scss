@@ -27,15 +27,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
-  padding: 0 20px;
+  padding: 26px 20px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 26px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 26px 110px;
   }
 }
 
@@ -61,4 +61,5 @@
 .contacts {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: $color-gray-50;
 }

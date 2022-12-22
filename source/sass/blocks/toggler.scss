@@ -4,4 +4,33 @@
   font-weight: 400;
   background-color: transparent;
   border: none;
+  text-transform: uppercase;
+}
+
+.toggler {
+  padding: 0 35px;
+  display: grid;
+  grid-template-columns: 49px 1fr 49px;
+  gap: 13px;
+  align-items: center;
+}
+
+.toggler__range {
+  border-radius: 6px;
+  background-color: $white;
+  border: 1px solid $gray-border;
+  height: 14px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 6px;
+    height: 6px;
+    background-color: #68B738;
+    width: 36px;
+    border-radius: 6px;
+  }
 }
