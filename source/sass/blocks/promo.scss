@@ -8,10 +8,14 @@
   color: $white;
   font-style: normal;
   font-weight: 400;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: none;
     background-color: $white;
+    padding-left: 87px;
+    text-align: left;
+    min-height: 833px;
   }
 }
 
@@ -21,20 +25,61 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: $font-black;
+    font-size: $font-size-20;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 48px;
+  }
 }
 
 .promo__title {
   font-size: $font-size-36;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
   @include no-grass;
   padding-top: 27px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $font-black;
+    font-size: $font-size-60;
+    text-align: left;
+    padding-right: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    width: 415px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__button {
   width: 100%;
-  display: inline-block;
+  display: block;
   padding: 10px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    width: 244px;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.promo__img {
+  max-width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    width: 709px;
+    height: 608px;
+}
 }
 

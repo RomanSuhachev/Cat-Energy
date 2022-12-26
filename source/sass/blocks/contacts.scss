@@ -7,6 +7,13 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    font-size: $font-size-20;
+    line-height: 26px;
+    font-weight: 400;
+  }
 }
 
 .contacts__address {
@@ -19,7 +26,12 @@
 
   @media(min-width: $tablet-width) {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-right: 40px;
+    text-align: right;
+    row-gap: 25px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -31,7 +43,11 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 30px;
+    padding: 60px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 280px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {

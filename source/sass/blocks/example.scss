@@ -5,6 +5,10 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient( to bottom, $white 60%, $color-gray-850 40%);
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 366px 1fr;
+    column-gap: 32px;
   }
 }
 
@@ -15,6 +19,12 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-60;
+    line-height: 60px;
+    margin-bottom: 65px;
+  }
 }
 
 .example__description {
@@ -27,6 +37,13 @@
   font-weight: 400;
   font-style: normal;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-16;
+    line-height: 24px;
+    grid-column: 1/-1;
+    margin-bottom: 55px;
+  }
 }
 
 .example-list {
@@ -36,6 +53,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .example-list__item {
@@ -45,6 +66,10 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
 }
 
 .example-list__title {
@@ -60,6 +85,15 @@
   text-align: center;
   margin-bottom: -14px;
   background-color: $color-gray-850;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0 7px;
+    background-color: $white;
+    margin-bottom: -6px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example-list__description {
@@ -71,6 +105,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-30;
+    line-height: 37px;
+  }
 }
 
 .example__spending {
@@ -80,6 +119,13 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-20;
+    line-height: 20px;
+    text-align: right;
+    padding-left: 140px;
+  }
 }
 
 .example__inner-wrapper {
@@ -88,10 +134,47 @@
   @media (min-width: $tablet-width) {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 170px;
+  grid-column: 1/-1;
   }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    display: grid;
+    padding: 0 58px;
+  }
+}
+
+.example__images {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+}
+
+.example__image {
+  overflow: hidden;
+}
+
+.example__image img {
+  max-width: none;
+  width: 592px;
+  height: 511px;
+}
+
+.example__image--active {
+  display: block;
 }
 
 .example__image--next {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    display: flex;
+    justify-content: end;
+  }
 }
