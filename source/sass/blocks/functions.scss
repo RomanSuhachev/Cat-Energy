@@ -101,19 +101,19 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/svg/leaf.svg");
+    background-image: url("../img/svg/leaf.svg");
   }
 
   &--powder::before {
-    background-image: url("../../img/svg/powder.svg");
+    background-image: url("../img/svg/powder.svg");
   }
 
   &--meal::before {
-    background-image: url("../../img/svg/eat.svg");
+    background-image: url("../img/svg/eat.svg");
   }
 
   &--weight::before {
-    background-image: url("../../img/svg/weight.svg");
+    background-image: url("../img/svg/weight.svg");
   }
 }
 

@@ -17,7 +17,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/cats-home_large.jpg");
+    background-image: url("../img/cats-home_large.jpg");
     padding: 60px 120px 60px 80px;
     grid-template-columns: 80px auto;
     column-gap: 265px;

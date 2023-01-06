@@ -494,7 +494,7 @@
 
 .program-fit .nutrition-programs__title::after {
   top: -3px;
-  background-image: url("../../img/svg/cat-slim-mobile.svg");
+  background-image: url("../img/svg/cat-slim-mobile.svg");
   width: 36px;
   height: 50px;
   left: 8px;
@@ -520,7 +520,7 @@
 
 .program-mass .nutrition-programs__title::after {
   top: 12px;
-  background-image: url("../../img/svg/cat-mass-mobile.svg");
+  background-image: url("../img/svg/cat-mass-mobile.svg");
   width: 67px;
   height: 28px;
   left: -9px;
@@ -605,7 +605,7 @@
   content: "";
   height: 12px;
   width: 24px;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -767,16 +767,16 @@
   }
 }
 .functions__item--leaf::before {
-  background-image: url("../../img/svg/leaf.svg");
+  background-image: url("../img/svg/leaf.svg");
 }
 .functions__item--powder::before {
-  background-image: url("../../img/svg/powder.svg");
+  background-image: url("../img/svg/powder.svg");
 }
 .functions__item--meal::before {
-  background-image: url("../../img/svg/eat.svg");
+  background-image: url("../img/svg/eat.svg");
 }
 .functions__item--weight::before {
-  background-image: url("../../img/svg/weight.svg");
+  background-image: url("../img/svg/weight.svg");
 }
 
 .functions__item--weight br {
@@ -1519,7 +1519,7 @@
 }
 @media (min-width: 728px) {
   .gift {
-    background-image: url("../../img/cats-home_large.jpg");
+    background-image: url("../img/cats-home_large.jpg");
     padding: 60px 120px 60px 80px;
     grid-template-columns: 80px auto;
     column-gap: 265px;
