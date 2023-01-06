@@ -1,10 +1,9 @@
 .catalog-list {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1220px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -15,11 +14,7 @@
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     row-gap: 65px;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   }
 }
 
-.catalog-list__item {
-  @media (min-width: $tablet-width) {
-    background-color: $color-gray-50;
-  }
-}

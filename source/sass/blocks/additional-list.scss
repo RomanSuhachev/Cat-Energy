@@ -1,17 +1,25 @@
 .additional-list {
   list-style: none;
-  margin: 0;
   padding: 0;
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
+}
+
+.additional-list__item {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  display: grid;
+  row-gap: 15px;
+  border-top: 1px solid $gray-border;
 
   @media (min-width: $tablet-width) {
-    padding: 0 38px;
+    padding: 28px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 15px 0;
+    align-items: center;
   }
 }

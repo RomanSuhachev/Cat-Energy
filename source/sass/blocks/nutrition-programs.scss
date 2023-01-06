@@ -28,6 +28,11 @@
     padding-left: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    min-height: 100px;
+  }
+
   &::before {
     content: "";
     width: 50px;
@@ -43,6 +48,14 @@
       top: calc(100% - 30px);
       left: auto;
       right: 9px;
+    }
+
+    @media (min-width:$desktop-width) {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 0;
+      top: 0;
     }
   }
 
@@ -68,6 +81,14 @@
     left: auto;
     right: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    right: auto;
+    left: 15px;
+    top: -7px;
+  }
 }
 .program-mass .nutrition-programs__title::after {
   top: 12px;
@@ -83,6 +104,14 @@
     left: auto;
     top: 82px;
     right: -25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    right: auto;
+    left: -18px;
+    top: 20px;
   }
 }
 
@@ -101,6 +130,10 @@
     line-height: 24px;
     max-width: 57%;
     margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
   }
 
     &::after {
@@ -176,5 +209,6 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 70px;
   }
 }

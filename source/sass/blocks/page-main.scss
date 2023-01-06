@@ -4,8 +4,25 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
-  max-width: 1440px;
-  margin: 0 auto;
+  max-width: 1220px;
+  margin: 0 auto 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.page-main__catalog {
+  border-top: 1px solid $gray-border;
+  border-bottom: 1px solid $gray-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 
 .page-main__text {
@@ -28,6 +45,10 @@
 
 .page-main__header {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .page-main__container {
@@ -47,5 +68,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.page-main__goods {
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
   }
 }

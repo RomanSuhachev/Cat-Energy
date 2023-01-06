@@ -6,20 +6,114 @@
   font-weight: 400;
   width: 100%;
   display: block;
+  padding: 10px;
 }
 
 .show-more {
   width: 100%;
   text-align: center;
+  padding-top: 80px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 160px;
+    border: 2px solid $color-gray-50;
+    background-color: $white;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 80px;
+  }
 
   &__title {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+    margin-bottom: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 2px;
+      width: 30px;
+      background-color: $color-gray-card;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 2px;
+      width: 30px;
+      background-color: $color-gray-card;
+      transform: rotate(90deg);
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+      font-size: 20px;
+      line-height: 22px;
+      max-width: 60%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 2px;
+        width: 60px;
+        background-color: $color-gray-card;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 2px;
+        width: 60px;
+        background-color: $color-gray-card;
+        transform: rotate(90deg);
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 75%;
+    }
   }
 
   &__description {
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
+    color: $color-gray-700;
+    font-size: $font-size-12;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 87px;
+      font-size: $font-size-16;
+      line-height: 18px;
+      max-width: 60%;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 75%;
+    }
   }
 }

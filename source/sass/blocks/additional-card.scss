@@ -6,6 +6,11 @@
   color: $color-black-20;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-card {
@@ -17,6 +22,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr 244px;
+    column-gap: 40px;
   }
 }
 
@@ -29,6 +37,18 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    justify-content: end;
+    font-size: $font-size-16;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 110px;
+  }
 }
 
 .property__price {
@@ -39,6 +59,9 @@
 .additional-card__button {
   width: 100%;
   display: block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;

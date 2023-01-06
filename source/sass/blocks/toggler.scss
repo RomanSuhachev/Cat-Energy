@@ -25,6 +25,10 @@
   @media (min-width: $tablet-width) {
     column-gap: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 25px;
+  }
 }
 
 .toggler__range {
@@ -86,5 +90,13 @@
     height: 6px;
     background-color: $gray-dark;
     border-radius: 6px;
+  }
+
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

@@ -13,9 +13,28 @@
   @media (min-width: $tablet-width) {
     background-image: none;
     background-color: $white;
-    padding-left: 87px;
     text-align: left;
     min-height: 833px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    position: relative;
+    min-height: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #63a63b;
+      background-image: url("../img/promo-large.jpg");
+      top: -200px;
+      left: 50%;
+      background-repeat: no-repeat;
+      z-index: 0;
+      background-position: 0 100%;
+    }
   }
 }
 
@@ -25,6 +44,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 29px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     color: $font-black;
@@ -67,6 +87,11 @@
     z-index: 1;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-20;
+    line-height: 20px;
+  }
 }
 
 .promo__img {
@@ -80,6 +105,27 @@
     bottom: 0;
     width: 709px;
     height: 608px;
-}
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 162px);
+    z-index: 2;
+    bottom: auto;
+    top: 30px;
+    width: 552px;
+    height: 499px;
+  }
 }
 
+.promo__container {
+
+  @media (min-width: $tablet-width) {
+    padding: 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    min-height: 582px;
+    padding-top: 85px;
+  }
+}

@@ -2,18 +2,28 @@
   font-family: "Arial", sans-serif;
   font-size: $font-size-12;
   color: $color-gray-700;
+  width: 100%;
+  border-bottom: 1px solid $gray-border;
   display: grid;
   width: 100%;
   grid-template-areas: "img title"
                       "img descr"
                       "btn btn";
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "img"
                         "title"
                         "descr"
                         "btn";
+    background-color: $color-gray-50;
+    border: none;
+    padding: 8px 38px 40px;
+    display: grid;
+    grid-template-rows: 200px auto;
+    background-image: linear-gradient(to bottom, $white 80px, $color-gray-50 80px);
   }
 }
 
@@ -24,19 +34,25 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  max-width: 50%;
+  max-width: 70%;
 
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0 auto;
-    max-width: 35%;
+    max-width: 50%;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 80%;
   }
 }
 
 .card__button {
   font-size: $font-size-16;
   grid-area: btn;
+  padding: 10px;
 }
 
 .card__title {
@@ -44,21 +60,62 @@
   margin: 0;
   padding: 0;
   grid-area: title;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__description {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   grid-area: descr;
+  row-gap: 2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    row-gap: 15px;
+    margin-bottom: 33px;
+  }
+}
+
+.card-description__wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 1px;
+      width: 100%;
+      background-color: $gray-border;
+    }
+  }
 }
 
 .card__image {
   grid-area: img;
+  margin: 0 36px;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
   }
+}
+
+.card__text,
+.card__value {
+  line-height: 16px;
+}
+
+.card__value {
+  text-align: right;
 }

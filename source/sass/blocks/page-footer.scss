@@ -1,12 +1,11 @@
-.page-footer {
-  background-color: $color-gray-50;
+.page-footer__container {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  margin: 0 auto;
   box-sizing: border-box;
   padding-top: 30px;
   padding-bottom: 22px;
+  max-width: 1220px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -14,10 +13,10 @@
     padding: 38px 30px 35px 30px;
     align-items: center;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
+.page-footer {
+  background-color: $color-gray-50;
 }
 
 
