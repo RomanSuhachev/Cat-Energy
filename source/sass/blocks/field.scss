@@ -2,6 +2,16 @@
   font-size: $font-size-16;
   color: $color-gray-700;
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__input::placeholder {
@@ -9,9 +19,30 @@
   color: $color-gray-700;
   font-size: $font-size-16;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__input {
   box-sizing: border-box;
   width: 100%;
+  padding: 13px;
+  border: 1px solid $gray-border-form;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 8px);
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
 }

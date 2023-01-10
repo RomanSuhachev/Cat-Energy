@@ -2,11 +2,72 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  row-gap: 15px;
+  box-sizing: border-box;
+  clear: both;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .field-group__header {
   font-size: $font-size-24;
   line-height: 26px;
+  margin-bottom: 35px;
+  width: 80%;
+  background-color: $white;
+  margin-left: -20px;
+  padding-left: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin-top: 15px;
+    height: 2px;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    width: auto;
+    margin-left: 0;
+
+    &::before {
+      margin-top: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    float: left;
+    display: flex;
+    width: auto;
+    margin-left: -40px;
+    padding-left: 40px;
+  }
 }
 
+.field-group__header span {
+  position: relative;
+  z-index: 1;
+  padding-right: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+  }
+}

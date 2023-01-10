@@ -11,6 +11,14 @@
     margin-bottom: 82px;
     font-size: 60px;
     line-height: 60px;
+
+    &--form {
+      padding-left: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -31,15 +39,21 @@
   font-style: normal;
   margin: 0;
   padding: 0;
-  padding: 0 20px;
-  margin: 0 auto;
+  text-transform: uppercase;
+  width: 85%;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding-left: 40px;
+    width: 50%;
+    font-size: $font-size-20;
+    margin-bottom: 65px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding:0;
+    width: 30%;
   }
 }
 
