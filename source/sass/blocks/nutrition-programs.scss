@@ -179,9 +179,14 @@
   }
 
   &:hover::after {
-    width: 32px;
-    background-position: 100% 50%;
+   transform: scaleX(1.5);
+   transform-origin: left;
+   transition: transform 0.2s ease;
   }
+}
+
+.nutrition-programs__link:active {
+  opacity: 0.3;
 }
 
 .nutrition-programs__item {

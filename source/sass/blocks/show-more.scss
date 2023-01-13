@@ -7,6 +7,14 @@
   width: 100%;
   display: block;
   padding: 10px;
+
+  &:hover {
+    background-color: $gray-card-border;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .show-more {

@@ -48,10 +48,34 @@
     background-color: #68B738;
     width: 36px;
     border-radius: 6px;
+    transform: translateX(-0%);
+    transition: all 0.4s ease;
   }
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.toggler__range--now {
+  border-radius: 6px;
+  background-color: $white;
+  border: 1px solid $gray-border;
+  height: 14px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    height: 6px;
+    right: 6px;
+    background-color: #68B738;
+    width: 36px;
+    border-radius: 6px;
+    transform: translateX(100%);
+    transition: all 0.4s ease;
   }
 }
 
@@ -68,6 +92,7 @@
     appearance: none;
     border-radius: 50%;
     border: 11px solid $white;
+    box-shadow: 0 0 1px $font-black;
   }
 
   &::-webkit-slider-thumb {
@@ -78,6 +103,53 @@
     border-radius: 50%;
     border: 11px solid $white;
     margin-top: -12px;
+    box-shadow: 0 0 1px $font-black;
+  }
+
+  &:hover {
+    &::-moz-range-thumb {
+      width: 30px;
+      height: 30px;
+      background-color: $basic-green;
+      appearance: none;
+      border-radius: 50%;
+      border: 11px solid $white;
+      box-shadow: 0 0 3px $font-black;
+    }
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      background-color: $basic-green;
+      border-radius: 50%;
+      border: 11px solid $white;
+      margin-top: -12px;
+      box-shadow: 0 0 3px $font-black;
+    }
+
+    &:active {
+      &::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+        background-color: $basic-green;
+        appearance: none;
+        border-radius: 50%;
+        border: 11px solid $white;
+        box-shadow: 0 0 3px $font-black;
+      }
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        background-color: $basic-green;
+        border-radius: 50%;
+        border: 11px solid $white;
+        margin-top: -12px;
+        box-shadow: 0 0 3px $font-black;
+      }
+    }
   }
 
   &::-webkit-slider-runnable-track {

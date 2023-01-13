@@ -18,4 +18,12 @@
     gap: 20px;
     padding-top: 0;
   }
+
+  &:hover svg path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -38,4 +38,13 @@
   & svg {
     display: block;
   }
+
+  &:hover svg path{
+
+    stroke: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

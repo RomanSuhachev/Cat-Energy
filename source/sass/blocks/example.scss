@@ -184,6 +184,9 @@
 }
 
 .example__images {
+  display: grid;
+  grid-template-columns: 1fr;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -195,6 +198,16 @@
 
 .example__image {
   overflow: hidden;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+    grid-row:auto;
+    grid-column: auto;
+  }
 }
 
 .example__image img {
@@ -210,14 +223,13 @@
 }
 
 .example__image--active {
-  display: block;
+  opacity: 1;
 }
 
 .example__image--next {
-  display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    opacity: 1;
     display: flex;
     justify-content: end;
   }

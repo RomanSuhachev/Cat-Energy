@@ -35,6 +35,20 @@
   @media (min-width: $tablet-width) {
     padding: 10px;
   }
+
+  &:hover {
+    border-color: $gray-border;
+  }
+
+  &:focus {
+    outline: 2px solid $color-gray-700;
+    outline-offset: -2px;
+  }
+
+  &:invalid {
+    outline: 2px solid $status-error;
+    outline-offset: -2px;
+  }
 }
 
 .field__icon {
@@ -45,4 +59,20 @@
   @media (min-width: $tablet-width) {
     right: 20px;
   }
+}
+
+.field__input:focus + .field__icon path,
+.field__input:focus + .field__icon line{
+  stroke: $basic-green;
+}
+
+.field__input[type="tel"]:focus + .field__icon path,
+.field__input[type="tel"]:focus + .field__icon line{
+  fill: $basic-green;
+  stroke: none;
+}
+
+.field__input:invalid + .field__icon path,
+.field__input:invalid + .field__icon line{
+  stroke: $status-error;
 }
