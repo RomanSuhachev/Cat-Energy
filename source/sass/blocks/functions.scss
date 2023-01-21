@@ -53,6 +53,7 @@
   gap: 20px;
   counter-increment: item;
   position: relative;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -62,8 +63,10 @@
     grid-template-columns: auto;
     padding-right: 30px;
     min-height: 280px;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-right: 72px;
+    align-items: start;
+    row-gap: 30px;
 
     &::after {
       content: counter(item);
@@ -73,6 +76,7 @@
       font-size: $font-size-280;
       line-height: 280px;
       font-weight: 400;
+      top: -40px;
       font-family: "Oswald", sans-serif;
       z-index: -1;
     }
@@ -104,6 +108,14 @@
     background-image: url("../img/svg/leaf.svg");
   }
 
+  &--leaf::after {
+    right: 95px;
+
+    @media (min-width: $desktop-width) {
+      right: 15px;
+    }
+  }
+
   &--powder::before {
     background-image: url("../img/svg/powder.svg");
   }
@@ -120,19 +132,18 @@
 .functions__item--weight br {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
 
-
-
-
 .functions__container {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    margin-bottom: 45px;
     &::after {
       content: "";
       height: 1px;

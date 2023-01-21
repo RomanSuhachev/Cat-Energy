@@ -12,7 +12,8 @@ pageHeader.classList.remove("page__header--no-JS");
 //Menu Toggler
 
   menuBtn.addEventListener("click", () => {
-    headerMenu.classList.toggle("page-header__list--opened")
+    headerMenu.classList.toggle("page-header__list--opened");
+    menuBtn.classList.toggle("page-header__navigation--open");
   })
 
 

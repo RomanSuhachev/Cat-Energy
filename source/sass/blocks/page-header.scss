@@ -1,15 +1,16 @@
 .page-header {
   background-color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
-    padding-bottom: 32px;
+    padding-bottom: 25px;
   }
 }
 
@@ -23,7 +24,7 @@
 
 .page__header--secondary {
   border-bottom: 1px solid $gray-line;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -31,27 +32,45 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 45px;
+    gap: 13px;
+  }
+}
+
+.page-header__bar {
+  display: grid;
+  grid-template-columns: 34px 1fr 34px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+   display: block;
   }
 }
 
 .page-header__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 16px;
+    align-items: center;
+  }
 }
 
 .page-header__logo {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: 34px 1fr;
   justify-items: center;
   align-items: center;
-  flex-grow: 1;
+  grid-column: 1/3;
 
   @media (min-width: $tablet-width) {
-    flex-grow:0;
-    gap: 15px;
+    gap: 12px;
+    grid-template-columns: 61px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 71px 1fr;
   }
 
   &:hover {
@@ -63,12 +82,20 @@
   }
 }
 
+.logo__sign {
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
+  }
+}
+
 .page-header__toggler {
   background-color: transparent;
   border: none;
   position: relative;
   height: 17.5px;
   width: 24px;
+  justify-self: end;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -135,4 +162,16 @@
   transform: scaleY(1);
   transition: transform 0.5s ease-in;
   transform-origin: top;
+}
+
+.page-header__logo .logo__image {
+  width: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 71px;
+  }
 }

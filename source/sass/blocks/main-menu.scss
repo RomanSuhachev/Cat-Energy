@@ -12,10 +12,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    position: static;
     flex-direction: row;
     border: none;
-    justify-content: space-between;
+    justify-content: flex-end;
+    position: static;
   }
 }
 
@@ -93,7 +93,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     &:not(:last-child) {
-      margin-right: 33px;
+      margin-right: 35px;
     }
   }
 

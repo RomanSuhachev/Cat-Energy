@@ -2,16 +2,23 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding: 30px 20px 0;
   padding-bottom: 22px;
   max-width: 1220px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
-    padding: 38px 30px 35px 30px;
+    grid-template-columns: 164px 1fr 164px;
+    padding: 45px 30px 55px 30px;
     align-items: center;
+    gap: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left:0;
+    padding-right: 0;
+    padding: 50px 0;
   }
 }
 
@@ -29,10 +36,12 @@
   padding: 8px 0;
   text-align: center;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    width: 100%;
+    display: flex;
   }
 
   &:hover {

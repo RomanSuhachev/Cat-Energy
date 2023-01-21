@@ -23,11 +23,14 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    column-gap: 15px;
+    column-gap: 20px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 25px;
+    column-gap: 20px;
+    padding: 0 14px;
+    margin-top:- 45px;
   }
 }
 

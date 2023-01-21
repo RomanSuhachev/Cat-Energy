@@ -17,7 +17,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-left: 68px;
+  padding-left: 75px;
   position: relative;
   margin-bottom: 22px;
 
@@ -26,11 +26,13 @@
     line-height: 36px;
     text-align: left;
     padding-left: 0;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
     min-height: 100px;
+    margin-bottom: 40px;
   }
 
   &::before {
@@ -40,7 +42,7 @@
     background-color: #68B738;
     border-radius: 50%;
     position: absolute;
-    left: 0;
+    left: 5px;
 
     @media (min-width: $tablet-width) {
       width: 200px;
@@ -72,7 +74,7 @@
   background-image: url("../img/svg/cat-slim-mobile.svg");
   width: 36px;
   height: 50px;
-  left: 8px;
+  left: 10px;
 
   @media (min-width: $tablet-width) {
     width: 140px;
@@ -102,7 +104,7 @@
     width: 268px;
     height: 112px;
     left: auto;
-    top: 82px;
+    top: 65px;
     right: -25px;
   }
 
@@ -122,18 +124,19 @@
   font-size: $font-size-14;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-16;
     line-height: 24px;
     max-width: 57%;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
+    margin-bottom: 25px;
   }
 
     &::after {
@@ -159,7 +162,7 @@
   color: $font-black;
   text-transform: uppercase;
   display: grid;
-  grid-template-columns: max-content 32px;
+  grid-template-columns: auto 32px;
   gap: 17px;
   align-items: center;
 
@@ -197,7 +200,11 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 53px 57px 53px;
+    padding: 73px 53px 57px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 53px 60px 53px;
   }
 }
 

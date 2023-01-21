@@ -1,15 +1,17 @@
 .example {
   background-color: $color-gray-850;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     background: linear-gradient( to bottom, $white 60%, $color-gray-850 40%);
     padding-top: 0;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient( to top, $color-gray-850 72%, $white 30%);
+    padding-bottom: 65px;
+    background: linear-gradient( to top, $color-gray-850 79%, $white 30%);
   }
 }
 
@@ -24,6 +26,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-60;
     line-height: 60px;
+    margin-bottom: 65px;
   }
 }
 
@@ -47,7 +50,16 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-2;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 72px;
+  }
+}
+
+.example__description br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -61,11 +73,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 85px;
+    gap: 45px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     gap: 42px;
     align-self: start;
   }
@@ -80,7 +93,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
+    padding-top: 10px;
   }
 }
 
@@ -120,11 +133,13 @@
   font-style: normal;
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-30;
     line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
   }
 }
 
@@ -141,7 +156,11 @@
     font-size: $font-size-20;
     line-height: 20px;
     text-align: right;
-    padding-left: 140px;
+    padding-left: 130px;
+    padding-top: 8px;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    row-gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,6 +170,7 @@
     display: grid;
     padding-left: 0;
     text-align: left;
+    column-gap: 25px;
 
     & span:first-child {
       grid-column: 1/3;
@@ -170,8 +190,6 @@
 
 .example__wrapper {
   @media (min-width: $tablet-width) {
-    grid-column: 1/-1;
-    display: grid;
     margin: 0 auto;
     width: 708px;
   }
@@ -180,19 +198,28 @@
     display: block;
     padding: 0;
     grid-column: auto;
+    width: 592px;
   }
 }
 
 .example__images {
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50% 1fr;
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    position: relative;
+    top: -45px;
+    right: -15px;
   }
 }
 
@@ -250,10 +277,12 @@
   display: grid;
   grid-template-columns: 366px 1fr;
   column-gap: 32px;
+  margin-bottom: 0px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 366px 70px 1fr;
-    padding-top: 45px;
+    padding-top: 0;
+    grid-template-rows:repeat(4, max-content);
   }
 }

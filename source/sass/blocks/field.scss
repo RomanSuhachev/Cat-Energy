@@ -4,7 +4,7 @@
   text-transform: uppercase;
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 10px;
+  column-gap: 15px;
   align-items: center;
   position: relative;
 
@@ -29,11 +29,11 @@
 .field__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 13px;
+  padding: 13px 15px;
   border: 1px solid $gray-border-form;
 
   @media (min-width: $tablet-width) {
-    padding: 10px;
+    padding: 14px 0px 14px 20px;
   }
 
   &:hover {
@@ -57,7 +57,7 @@
   top: calc(50% - 8px);
 
   @media (min-width: $tablet-width) {
-    right: 20px;
+    right: 15px;
   }
 }
 

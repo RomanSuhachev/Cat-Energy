@@ -3,8 +3,8 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, max-content);
-  gap: 22px;
-  padding: 22px 0;
+  gap: 30px;
+  padding: 15px 0;
   justify-content: center;
   border-top: 1px solid $gray-border;
   border-bottom: 1px solid $gray-border;
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    gap: 0px;
     border: none;
     padding: 0;
   }
@@ -24,6 +24,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+  }
 }
 
 .social-list__link {
@@ -33,9 +39,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 8px;
-  }
-
-  & svg {
     display: block;
   }
 

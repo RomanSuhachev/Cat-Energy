@@ -3,18 +3,20 @@
   justify-items: center;
   margin: 0 auto;
   max-width: 1220px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 65px;
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     row-gap: 65px;
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    padding: 0;
   }
 }
 

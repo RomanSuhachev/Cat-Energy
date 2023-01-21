@@ -9,7 +9,7 @@
   grid-template-areas: "img title"
                       "img descr"
                       "btn btn";
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
   padding: 20px;
   box-sizing: border-box;
 
@@ -19,6 +19,7 @@
                         "descr"
                         "btn";
     background-color: $color-gray-50;
+    grid-template-columns: auto;
     border: none;
     padding: 8px 38px 40px;
     display: grid;
@@ -35,17 +36,24 @@
   text-transform: uppercase;
   text-decoration: none;
   max-width: 70%;
+  letter-spacing: -1.2px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 0 auto;
-    max-width: 50%;
+    padding: 0 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    letter-spacing: -0.2px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 80%;
+    max-width: 100%;
+    margin-top: 35px;
+    margin-bottom: 15px;
   }
 }
 
@@ -53,6 +61,11 @@
   font-size: $font-size-16;
   grid-area: btn;
   padding: 10px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .card__title {
@@ -65,6 +78,10 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .card__description {
@@ -73,6 +90,7 @@
   padding: 10px 0;
   grid-area: descr;
   row-gap: 2px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -103,11 +121,14 @@
 
 .card__image {
   grid-area: img;
-  margin: 0 36px;
+  align-self: center;
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
     align-self: center;
     justify-self: center;
+    width: auto;
+    align-self: end;
   }
 }
 

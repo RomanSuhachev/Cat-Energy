@@ -2,3 +2,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p {
+  word-wrap: break-word;
+}

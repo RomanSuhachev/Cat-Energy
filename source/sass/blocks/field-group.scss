@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  row-gap: 15px;
+  row-gap: 12px;
   box-sizing: border-box;
   clear: both;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +22,8 @@
 .field-group__header {
   font-size: $font-size-24;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
+  padding-top: 3px;
   width: 80%;
   background-color: $white;
   margin-left: -20px;
@@ -69,5 +71,13 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 40px;
+  }
+}
+
+
+.field-group__header--advanced {
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
   }
 }

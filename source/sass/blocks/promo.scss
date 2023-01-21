@@ -10,6 +10,12 @@
   font-weight: 400;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-cat@2.jpg"), linear-gradient(#63a63b 0, #63a63b 304px, #ffffff 302px);
+    background-position: 50% 0;
+    background-size: auto 302px, auto;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: none;
     background-color: $white;
@@ -43,7 +49,7 @@
   line-height: 14px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -51,7 +57,11 @@
     font-size: $font-size-20;
     line-height: 20px;
     text-align: left;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 40%;
   }
 }
 
@@ -71,8 +81,15 @@
     padding-right: 50px;
     line-height: 60px;
     font-weight: 400;
-    width: 415px;
     margin-bottom: 40px;
+    padding-top: 45px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+    padding-top: 0px;
   }
 }
 
@@ -80,9 +97,13 @@
   width: 100%;
   display: block;
   padding: 10px 12px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 26px;
+    padding: 18px 26px;
     width: 244px;
     z-index: 1;
     position: relative;
@@ -101,8 +122,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 0;
-    left: 0;
-    bottom: 0;
+    left: 30px;
+    bottom: -25px;
     width: 709px;
     height: 608px;
   }
@@ -111,7 +132,7 @@
     left: calc(50% - 162px);
     z-index: 2;
     bottom: auto;
-    top: 30px;
+    top: 0;
     width: 552px;
     height: 499px;
   }
@@ -120,12 +141,12 @@
 .promo__container {
 
   @media (min-width: $tablet-width) {
-    padding: 0 90px;
+    padding: 0 120px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    min-height: 582px;
-    padding-top: 85px;
+    min-height: 550px;
+    padding-top: 80px;
   }
 }

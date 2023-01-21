@@ -8,18 +8,22 @@
 }
 
 .additional-list__item {
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 20px;
   display: grid;
-  row-gap: 15px;
+  row-gap: 13px;
   border-top: 1px solid $gray-border;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 40px;
+    padding: 26px 40px;
+    grid-template-rows: max-content max-content;
+    align-items: end;
+    row-gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
+    padding: 16px 0;
     align-items: center;
+    grid-template-rows: auto;
   }
 }

@@ -3,12 +3,25 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: $font-black;
+  height: 100%;
 }
 
 .page__header {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+}
+
+.page__body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  margin: 0;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.page__main {
+  flex-grow: 1;
 }
 
 
