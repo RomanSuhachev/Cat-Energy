@@ -61,8 +61,12 @@
   }
 }
 
-.field__input:focus + .field__icon path,
-.field__input:focus + .field__icon line{
+.field__icon {
+  stroke: #222222;
+  stroke-width: 1.3px;
+}
+
+.field__input:focus + .field__icon {
   stroke: $basic-green;
 }
 

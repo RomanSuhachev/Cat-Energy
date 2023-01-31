@@ -22,8 +22,8 @@
     align-items: center;
   }
 
-  &:hover svg path {
-    fill: $basic-green;
+  &:hover svg {
+    stroke: $basic-green;
   }
 
   &:active {

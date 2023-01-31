@@ -2102,6 +2102,7 @@ h1, h2, h3, h4, p {
   grid-area: btn;
   padding: 10px;
   margin-bottom: 5px;
+  align-self: end;
 }
 @media (min-width: 740px) {
   .card__button {
@@ -2363,8 +2364,12 @@ h1, h2, h3, h4, p {
   }
 }
 
-.field__input:focus + .field__icon path,
-.field__input:focus + .field__icon line {
+.field__icon {
+  stroke: #222222;
+  stroke-width: 1.3px;
+}
+
+.field__input:focus + .field__icon {
   stroke: #68b738;
 }
 
@@ -2925,8 +2930,8 @@ template {
     align-items: center;
   }
 }
-.developer:hover svg path {
-  fill: #68b738;
+.developer:hover svg {
+  stroke: #68b738;
 }
 .developer:active {
   opacity: 0.3;
@@ -3257,6 +3262,10 @@ template {
   padding: 4px;
   display: flex;
   align-items: center;
+  color: #666666;
+}
+.social-list__link:hover {
+  color: #68b738;
 }
 @media (min-width: 740px) {
   .social-list__link {
@@ -3264,7 +3273,7 @@ template {
     display: block;
   }
 }
-.social-list__link:hover svg path {
+.social-list__link:hover svg {
   stroke: #68b738;
 }
 .social-list__link:active {

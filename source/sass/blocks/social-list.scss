@@ -36,14 +36,18 @@
   padding: 4px;
   display: flex;
   align-items: center;
+  color: #666666;
+
+  &:hover {
+    color: $basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 8px;
     display: block;
   }
 
-  &:hover svg path{
-
+  &:hover svg {
     stroke: $basic-green;
   }
 
