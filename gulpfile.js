@@ -111,7 +111,7 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   gulp.parallel(

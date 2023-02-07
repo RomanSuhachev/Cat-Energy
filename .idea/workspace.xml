@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35bdad39-cc88-4c0b-9923-88002304d5b9" name="Changes" comment="добавлена сборка в билд. Скачать проект, установить зависимости через npm i, затем запустить сборку проекта npm start.">
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/source/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/Favicon/152.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/favicon/152.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/Favicon/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/favicon/16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/Favicon/180.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/favicon/180.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/Favicon/192.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/favicon/192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/Favicon/310.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/favicon/310.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/Favicon/32.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/favicon/32.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LHKPyugvbNGwgB3JkmakBKouQl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/roman/Desktop/Cat-Energy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/Users/roman/Desktop/Cat-Energy/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35bdad39-cc88-4c0b-9923-88002304d5b9" name="Changes" comment="" />
+      <created>1675522547761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675522547761</updated>
+      <workItem from="1675522549348" duration="124000" />
+      <workItem from="1675570395111" duration="71000" />
+      <workItem from="1675623089455" duration="149000" />
+      <workItem from="1675623887739" duration="41000" />
+      <workItem from="1675624179501" duration="626000" />
+      <workItem from="1675660140826" duration="2385000" />
+      <workItem from="1675766375645" duration="6589000" />
+      <workItem from="1675784818456" duration="2261000" />
+    </task>
+    <task id="LOCAL-00001" summary="добавлена сборка в билд. Скачать проект, установить зависимости через npm i, затем запустить сборку проекта npm start.">
+      <created>1675787858099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675787858099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="добавлена сборка в билд. Скачать проект, установить зависимости через npm i, затем запустить сборку проекта npm start." />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлена сборка в билд. Скачать проект, установить зависимости через npm i, затем запустить сборку проекта npm start." />
+  </component>
+</project>
